@@ -29,7 +29,7 @@ class AnimePahe:
         self.base = "https://animepahe.pw"
         self.headers = {
             "User-Agent": random_user_agent(),
-            "Referer": "https://animepahe.si/",
+            "Referer": "https://animepahe.pw/",
         }
         self.session = tls_client.Session(client_identifier="chrome_120")
 
