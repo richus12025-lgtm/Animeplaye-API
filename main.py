@@ -196,6 +196,16 @@ console.log = (...args)=>{__captured.push(args.join(' '));origLog(...args);};
 
 # -------------------- FastAPI --------------------
 app = FastAPI()
+from fastapi.middleware.cors import CORSMiddleware
+
+# Add CORS middleware to allow requests from your frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins (fine for school project)
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allows all headers
+)
 pahe = AnimePahe()
 
 
