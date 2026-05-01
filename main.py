@@ -26,7 +26,7 @@ def random_user_agent():
 # -------------------- AnimePahe Class --------------------
 class AnimePahe:
     def __init__(self):
-        self.base = "https://animepahe.si"
+        self.base = "https://animepahe.pw"
         self.headers = {
             "User-Agent": random_user_agent(),
             "Referer": "https://animepahe.si/",
